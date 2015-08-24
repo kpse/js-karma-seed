@@ -26,4 +26,14 @@ describe("App", function () {
 
     expect(fixture.find('#app')).toContainElement('ul.result')
   });
+
+  it("should not repeat the same dom", function () {
+    var fixture = setFixtures('<div id="app"></div>')
+    var app = new App('#app');
+
+    app.index();
+    app.index();
+
+    expect($('.panel').length).toBe(1)
+  });
 });
