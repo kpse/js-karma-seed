@@ -46,6 +46,6 @@ describe("App", function () {
     fixture.find('.search').click();
     $('ul.result .item:first').click();
 
-    expect(fixture.find('.favorite')).toContainElement('li.like')
+    expect(fixture.find('.favorite')).toContainElement('.item')
   });
 });
