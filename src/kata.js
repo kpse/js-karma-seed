@@ -1,8 +1,9 @@
-function App() {
-
+function App(root) {
+  var rootSelector = root;
   return {
     index: function () {
-      return _.template({}, "<html><body></body></html>");
+      var panel = _.template("<div class='panel'>panel</div>");
+      $(panel()).appendTo(rootSelector);
     }
   };
 }
