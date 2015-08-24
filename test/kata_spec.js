@@ -1,6 +1,6 @@
-describe("Person", function () {
-  it("has a greeting", function() {
-    var person = new Person();
-    expect(person.greet).toBe("Hello!");
+describe("App", function () {
+  it("can render a page", function () {
+    var app = new App();
+    expect($(app.index())).toContainElement('body');
   });
 });

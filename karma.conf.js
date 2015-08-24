@@ -15,6 +15,9 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'node_modules/jquery/dist/jquery.js',
+      'node_modules/jasmine-jquery/lib/jasmine-jquery.js',
+      'node_modules/lodash/index.js',
       'src/*.js',
       'test/*.js'
     ],

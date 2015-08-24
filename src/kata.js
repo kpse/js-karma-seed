@@ -1,3 +1,8 @@
-function Person() {
-  return { greet: "Hello!" };
+function App() {
+
+  return {
+    index: function () {
+      return _.template({}, "<html><body></body></html>");
+    }
+  };
 }
